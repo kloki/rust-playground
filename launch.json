@@ -1,0 +1,31 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run play",
+      "type": "codelldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/target/debug/play",
+      "cargo": {
+        "args": ["build"],
+        "problemMatcher": "$rustc"
+      },
+      "cwd": "${workspaceFolder}",
+      "sourceLanguages": ["rust"],
+      "stopOnEntry": true
+    },
+    {
+      "name": "Run async",
+      "type": "codelldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/target/debug/play-async",
+      "cargo": {
+        "args": ["build"],
+        "problemMatcher": "$rustc"
+      },
+      "cwd": "${workspaceFolder}",
+      "sourceLanguages": ["rust"],
+      "stopOnEntry": true
+    }
+  ]
+}
